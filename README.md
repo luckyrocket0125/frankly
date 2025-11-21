@@ -1,8 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Supabase Setup
+
+This project uses Supabase for authentication. To set it up:
+
+1. Create a Supabase project at [https://supabase.com](https://supabase.com)
+2. Get your project URL and publishable key from your project settings: **Settings** → **API**
+3. Create a `.env.local` file in the root directory with the following:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY=your_supabase_publishable_key
+```
+
+4. Replace `your_supabase_project_url` and `your_supabase_publishable_key` with your actual Supabase credentials
+
 ## Getting Started
 
-First, run the development server:
+First, set up your `.env.local` file with Supabase credentials (see above).
+
+Then, run the development server:
 
 ```bash
 npm run dev
