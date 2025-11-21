@@ -16,12 +16,12 @@ export default function Navbar() {
         
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 md:flex">
-          <Link
-            href="/listings"
+          <a
+            href="https://deals.franklyadvisors.com/"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
             View All Listings
-          </Link>
+          </a>
           <Link
             href="/sell"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
@@ -30,13 +30,13 @@ export default function Navbar() {
           </Link>
           <Link
             href="/login"
-            className="rounded-full border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+            className="rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             Login
           </Link>
           <Link
             href="/signup"
-            className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Sign up
           </Link>
@@ -60,13 +60,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="border-t border-border bg-background md:hidden">
           <div className="container mx-auto flex flex-col gap-4 px-4 py-4">
-            <Link
-              href="/listings"
+            <a
+              href="https://deals.franklyadvisors.com/"
               onClick={() => setIsOpen(false)}
               className="text-sm font-medium text-foreground transition-colors hover:text-primary"
             >
               View All Listings
-            </Link>
+            </a>
             <Link
               href="/sell"
               onClick={() => setIsOpen(false)}
@@ -78,14 +78,14 @@ export default function Navbar() {
               <Link
                 href="/login"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full border border-border px-4 py-2 text-center text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                className="rounded-md border border-border px-4 py-2 text-center text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               >
                 Login
               </Link>
               <Link
                 href="/signup"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                className="rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Sign up
               </Link>
